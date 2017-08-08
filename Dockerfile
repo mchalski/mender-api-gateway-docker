@@ -10,6 +10,8 @@ EXPOSE 443
 
 COPY nginx.conf /usr/local/openresty/nginx/conf/nginx.conf
 
+COPY mt.nginx.conf /usr/local/openresty/nginx/conf/mt.nginx.conf
+
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
